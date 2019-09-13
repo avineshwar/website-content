@@ -69,8 +69,8 @@ func main() {
 	wilson := Cat{7, "Wilson", []string{"Tom", "Tabata", "Willie"}}
 	nikita := wilson
 
-	nikita.friends = make([]string, len(wilson.friends))
-	copy(nikita.friends, wilson.friends)
+	nikita.friends = make([]string, len(wilson.friends)) // why do we need this?
+	copy(nikita.friends, wilson.friends) // why do we need this?
 
 	nikita.friends = append(nikita.friends, "Syd")
 
